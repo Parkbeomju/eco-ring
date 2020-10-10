@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "beomju",
+    "password": "wisoft!0318",
+    "database": "data",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "space",
+  "version": "2020.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "keywords": [],
+  "author": "Beomju Park <20171643.info@edu.hanbat.ac.kr> (https://git.wisoft.io/beomju)",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.4.1",
+    "sequelize": "^6.3.5"
+  }
+}
