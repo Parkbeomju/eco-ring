@@ -2,6 +2,15 @@ const express = require('express');
 const router = express.Router();
 const {Data} = require('../models');
 
+router.get('/',  async (req, res) => {
+    const data = await Data.findOne({
+        attributes: ['temperature', 'humidity', 'ultra_fine_dust', 'measurement_time', 'status'],
+        order: [['data_idx', 'DESC']]
+    })
+
+    res.render('map.html', {temperature : data.temperature, humidity: data.humidity, status: data.status});
+})
+
 router.get('/data', async (req, res) => {
     try {
         const data = await Data.findOne({
